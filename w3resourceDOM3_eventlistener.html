@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para">Write a JavaScript program to set the background color of a paragraph</p>
+    <script>
+        par = document.getElementById('para');
+        par.addEventListener('mouseover', myFunction);
+        par.addEventListener('mouseout', yFunction);
+
+        function myFunction() {
+            par.style.background = "red";
+        }
+
+        function yFunction() {
+            par.style.background = "white";
+        }
+    </script>
+</body>
+
+</html>

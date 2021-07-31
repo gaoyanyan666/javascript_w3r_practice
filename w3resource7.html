@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.</p>
+    <p id="demo"></p>
+    <script>
+        for (let year = 2014; year <= 2050; year++) {
+            elem = document.querySelector('#demo');
+            let d = new Date(year, 0, 1);
+            let w = d.getDay();
+            if (w === 0) {
+                elem.innerHTML += "January 1st " + year + " is Sunday.";
+            }
+        }
+    </script>
+</body>
+
+</html>

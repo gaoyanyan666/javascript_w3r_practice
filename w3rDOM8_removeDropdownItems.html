@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove items from a dropdown list</title>
+</head>
+
+<body>
+    <p>Write a JavaScript program to remove items from a dropdown list.</p>
+    <form>
+        <select id="colorSelect">
+        <option>Red</option>
+        <option>Green</option>
+        <option>White</option>
+        <option>Black</option>
+        </select>
+        <input type="button" onclick="removeColor()" value="Select and Remove">
+    </form>
+    <script>
+        function removeColor() {
+            let s = document.getElementById('colorSelect');
+            s.remove(s.selectedIndex);
+        }
+        //document.getElementById('colorSelect').options;提取option 元素
+        //document.getElementById('colorSelect').selectedIndex;提取option的index
+        //remove()	Removes an option from a drop-down list
+        //add()	Adds an option to a drop-down list
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Write a JavaScript program to calculate multiplication and division of two numbers (input from user). </p>
+    <form action="/action_page.php" method="post">
+        <fieldset>
+            <legend>calculation</legend>
+            <input type="text" name="number" id="number1"><br>
+            <input type="text" name="number" id="number2"><br>
+            <button onClick="opt(n1,n2)" id="m">Multiply</button>
+            <button onClick="di()" id="d">Divide</button>
+            <p>The result is:</p>
+            <p id="demo"></p>
+        </fieldset>
+    </form>
+    <script>
+        function multi() {
+            n1 = document.getElementById("number1").value;
+            n2 = document.getElementById("number2").value;
+            document.getElementById('demo').innerHTML = n1 * n2;
+        }
+
+        function di() {
+            n1 = document.getElementById("number1").value;
+            n2 = document.getElementById("number2").value;
+            document.getElementById('demo').innerHTML = n1 / n2;
+        }
+    </script>
+</body>
+
+</html>
